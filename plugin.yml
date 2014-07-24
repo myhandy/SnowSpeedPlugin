@@ -1,0 +1,4 @@
+main: com.myhandy.SnowSpeed.Snow
+name: SnowSpeedPlugin
+version: 1.0
+description: sets player walk speed
