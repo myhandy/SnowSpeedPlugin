@@ -18,7 +18,6 @@ public final class Snow extends JavaPlugin {
 	   	  	public void run() {
 	   	  		for(Player p : Bukkit.getOnlinePlayers()){
 	   	  				if(p.getWorld().getName().equals(getConfig().getString("WORLD"))) {
-	   	  					p.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 12000, 1));
 	   	  					int radius = 5;
 	   	  					for(int i = -radius; i <= radius; i++) {
 	   	  							for(int j = -radius; j <= radius; j++) {
@@ -55,12 +54,8 @@ public final class Snow extends JavaPlugin {
 	   	  								}
 	   	  							}
 	   	  					}
-	                 	}else{
-	                 		if(p.getPlayer().hasPotionEffect(PotionEffectType.SLOW)){
-								p.getPlayer().removePotionEffect(PotionEffectType.SLOW);
-							}
-	   	  					
-	   	  				}
+	   	  				p.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 1200, 1));
+	                 	}
 	   	  		}
 	   	  	}
 		}, 0L, 20L);
