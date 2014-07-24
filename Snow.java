@@ -27,31 +27,26 @@ public final class Snow extends JavaPlugin {
 	   	  										if(p.getPlayer().hasPotionEffect(PotionEffectType.SLOW)){
 	   	  											p.getPlayer().removePotionEffect(PotionEffectType.SLOW);
 	   	  										}
-	   	  										return;
 	   	  									}else{
 	   	  										if(p.getLocation().getBlock().getRelative(i, j, k).getType() == Material.FIRE){
 	   	  											if(p.getPlayer().hasPotionEffect(PotionEffectType.SLOW)){
 	   	  												p.getPlayer().removePotionEffect(PotionEffectType.SLOW);
 	   	  											}
-	   	  											return;
 	   	  										}else{
 	   	  											if(p.getLocation().getBlock().getRelative(i, j, k).getType() == Material.BURNING_FURNACE){
 	   	  												if(p.getPlayer().hasPotionEffect(PotionEffectType.SLOW)){
 	   	  													p.getPlayer().removePotionEffect(PotionEffectType.SLOW);
 	   	  												}
-	   	  												return;
 	   	  											}else{
 		   	  											if(p.getLocation().getBlock().getRelative(i, j, k).getType() == Material.LAVA){
 		   	  												if(p.getPlayer().hasPotionEffect(PotionEffectType.SLOW)){
 		   	  													p.getPlayer().removePotionEffect(PotionEffectType.SLOW);
 		   	  												}
-		   	  												return;
 		   	  											}else{
 			   	  											if(p.getLocation().getBlock().getRelative(i, j, k).getType() == Material.STATIONARY_LAVA){
 			   	  												if(p.getPlayer().hasPotionEffect(PotionEffectType.SLOW)){
 			   	  													p.getPlayer().removePotionEffect(PotionEffectType.SLOW);
 			   	  												}
-			   	  												return;
 			   	  											}
 			   	  										}
 	   	  											}
