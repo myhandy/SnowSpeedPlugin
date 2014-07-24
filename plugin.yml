@@ -1,4 +1,6 @@
 main: com.myhandy.SnowSpeed.Snow
-name: SnowSpeedPlugin
+name: SnowSpeedEffect
 version: 1.0
-description: sets player walk speed
+author: Myhandy
+description: sets player walk speed to slow if in the world specified by config. checks if player is within 5 blocks of a fire source (torch, burning furnace,
+  fire, lava) and if they are it removes the slow effect.
