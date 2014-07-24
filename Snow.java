@@ -16,7 +16,7 @@ public final class Snow extends JavaPlugin {
 	   	  public void run() {
 	                Player[] plry = Bukkit.getServer().getOnlinePlayers();
 	                World world = Bukkit.getServer().getWorld(getConfig().getString("WORLD"));
-	              
+	              	//more stuff later
 	      }
 		}, 0L, 20L);
 	}
